@@ -18,6 +18,10 @@ const printWidestLetter = (letter) => {
 }
 
 const printDiamond = (letter) => {
+    if(letter === "A") {
+        console.log("A")
+        return;
+    }
     const indexOfLetter = LETTERS.indexOf(letter);
     const widestLength = (indexOfLetter * 2) + 1;
     for(let i = 0; i < indexOfLetter; i++){
